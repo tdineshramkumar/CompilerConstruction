@@ -1,0 +1,18 @@
+_main[]
+	string a, b, c;
+	a = "Hello World";
+	b = "Hi There";
+	print(a);
+	print(b);
+	int z;
+	z = @a;
+	print(z);
+	print(a);
+	c = a + b;
+	c = c + b;
+	print(a);
+	print(b);
+	print(c);
+	z = @c;
+	print(z);
+end

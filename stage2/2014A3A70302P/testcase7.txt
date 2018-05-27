@@ -1,0 +1,57 @@
+_main[]
+	int a, g,h,x,b;
+	real z;
+	matrix s, s1;
+	int u,v;	
+#	int b;
+	s = [1,2, 3; 4, 5, 6; 6, 7, 8];
+	s1 = [1,2 ; 4, 5, 0; 7, 8];
+#	s = "abcd";
+	s = s + s1;
+	a = 2 + 5;
+	b = (a-4)*(3-1);
+	g = 10;
+	h = 9;
+	u = 12;
+	read(v);
+	function [int sum, int diff, matrix m]= _fun1[int c]
+		int a;
+		read(a);
+		sum = c + b;
+		diff = c - a;
+		m = s;
+	end;
+	_fun1(10);
+	a = ((a -g) *(h+u))+((13-a)*(u+g));
+	g = ((a -g) *(h+u))-((10+a)*(u+a));
+	if(g<2)
+#		int a;
+		x = 5;
+	else
+		x = 10;
+	endif;
+	int z1 ;
+	z1 = s1[0,2];
+	if(z1<2)
+		x = 15;
+	else
+		x = 20;
+	endif;
+	if(g<2)
+		x = 15;
+	else
+		x = 20;
+	endif;
+	print(s1);
+	print(s);
+	print(x);
+	print(g);
+	print(a);
+end
+
+#Semantic errors
+#line 7: type mismatch errors
+#line 9: type mismatch error
+#line 15: type mismatch error
+#line 18: type mismatch error
+#line 20: type mismatch error

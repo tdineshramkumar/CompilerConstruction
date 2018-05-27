@@ -1,0 +1,9 @@
+_main[]
+	function [int x] = _fun1[int y]
+		function [int x] = _fun2[int y]
+			x = _fun1(y);
+		end;
+		x = 2;
+		_fun1(x);
+	end;
+end

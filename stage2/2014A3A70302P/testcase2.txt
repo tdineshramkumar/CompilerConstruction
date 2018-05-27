@@ -1,0 +1,9 @@
+_main[]
+	string s;
+	int a;
+	s = "abcd"+[1,2,3,5; 4,5,6; 1, 2 ,3 ,4, 5];
+	# above should be syntactically correct
+	a = @s;
+	_fun([1,2,3,5; 4,5,6; 1, 2 ,3 ,4, 5]);
+	print(a);
+end

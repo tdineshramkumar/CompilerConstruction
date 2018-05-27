@@ -1,0 +1,15 @@
+_main[]
+	matrix s;
+	s = [1,2;3,4];
+	function [matrix s2] = _print[matrix s1]
+		matrix s3;
+		s3 = [1, 2; 3, 4];
+		s1 = s3 + s1;
+		print(s1);
+		 s2 = s3 ;
+	end;
+	matrix s1;
+	s = _print(s);
+
+
+end

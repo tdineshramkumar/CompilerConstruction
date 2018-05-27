@@ -1,0 +1,93 @@
+/*
+	T Dinesh Ram Kumar
+	2014A3A70302P
+	Compiler Submission Stage 1
+*/
+
+
+#ifndef _HASH_VALUES_
+#define _HASH_VALUES_
+
+#include "parserDef.h"
+
+SYMBOL toSymbol(char *c) ;
+#define SOME_RANDOM_PRIME 997
+#define MULTIPLIER 83
+
+#define IMPLIES_HASH 806 
+#define NT_ARG_HASH 30
+#define NT_ARGS_HASH 579
+#define NT_ARITH_EXPR_HASH 474
+#define NT_ASSIGN_STMT_HASH 176
+#define NT_BOOL_EXPR_HASH 445
+#define NT_BOOL_OP_HASH 216
+#define NT_BOOL_OPERAND_HASH 652
+#define NT_CONDITION_HASH 620
+#define NT_COND_STMT_HASH 695
+#define NT_DECL_STMT_HASH 503
+#define NT_ELSE_STMT_HASH 98
+#define NT_EXPR1_HASH 895
+#define NT_EXPR2_HASH 896
+#define NT_FUNC_CALL_HASH 739
+#define NT_FUNC_DEF_HASH 256
+#define NT_IO_STMT_HASH 234
+#define NT_MATRIX_HASH 347
+#define NT_MATRIX_ELEMENT_HASH 340
+#define NT_MOREVARS_HASH 286
+#define NT_MORE_IN_ARITH_EXPR_HASH 229
+#define NT_MORE_IN_PROD_HASH 461
+#define NT_MORE_IN_ROW_HASH 845
+#define NT_MORE_PARAMS_HASH 257
+#define NT_MORE_ROWS_HASH 243
+#define NT_PARAMS_HASH 164
+#define NT_PROD_TERM_HASH 62
+#define NT_PROGRAM_HASH 940
+#define NT_REL_OP_HASH 716
+#define NT_ROW_HASH 261
+#define NT_RVALUE_HASH 452
+#define NT_STMT_HASH 36
+#define NT_STMTS_HASH 80
+#define NT_TYPE_HASH 326
+#define NT_VARLIST_HASH 518
+#define T_AND_HASH 500
+#define T_ASSIGN_HASH 202
+#define T_CL_HASH 349
+#define T_COMMA_HASH 977
+#define T_DIV_HASH 830
+#define T_ELSE_HASH 185
+#define T_END_HASH 140
+#define T_ENDIF_HASH 205
+#define T_EQ_HASH 520
+#define T_FUNCTION_HASH 81
+#define T_FUNID_HASH 975
+#define T_GE_HASH 674
+#define T_GT_HASH 689
+#define T_ID_HASH 839
+#define T_IF_HASH 841
+#define T_INT_HASH 793
+#define T_LE_HASH 92
+#define T_LT_HASH 107
+#define T_MAIN_HASH 414
+#define T_MATRIX_HASH 709
+#define T_MINUS_HASH 770
+#define T_MUL_HASH 9
+#define T_NE_HASH 258
+#define T_NOT_HASH 426
+#define T_NULL_HASH 364
+#define T_NUM_HASH 917
+#define T_OP_HASH 352
+#define T_OR_HASH 354
+#define T_PLUS_HASH 946
+#define T_PRINT_HASH 581
+#define T_READ_HASH 913
+#define T_REAL_HASH 921
+#define T_RNUM_HASH 775
+#define T_SEMICOLON_HASH 832
+#define T_SIZE_HASH 144
+#define T_SQC_HASH 125
+#define T_SQO_HASH 137
+#define T_STR_HASH 389
+#define T_STRING_HASH 208
+#define RULE_DIVIDER_HASH 124 // Modified
+
+#endif 

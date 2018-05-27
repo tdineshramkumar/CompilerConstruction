@@ -1,0 +1,39 @@
+_main[     ]
+	string str1, str2;
+	matrix m1;
+	str1 = "eradicate";
+	blankSTR = "  ";
+	str2 = "plagiarism";
+	function [string s, string s1]= _concatenate2[string a, string a2]
+		string str3;
+		str1 = a + a2;
+		str2 = a + a;
+	end;
+	function [string s]= _concatenate[string a, string a2]
+		string str3;
+		str1 = a + a2;
+		str2 = a + a;
+	end;
+	string ccSubmission;
+	ccSubmission = _concatenate(str1[2,3], blankSTR);
+	_concatenate(str1[2,3], blankSTR);
+	ccSubmission = _concatenate(ccSubmission, str2);
+	if( .not. (( str1 > 10 ).and. ( ( str1 >= 11) .or. (str3 <= 11 ) ) ) )
+		function [string s]= _concatenate[string a, string a2]
+	#		string str3;
+			int str3;
+			str1 = a + a2;
+			str2 = a + a;
+		end;
+		string str5;
+	else 
+		strr4 = 10;
+	endif;
+	[a,b, c] = @a;
+	a1 = ((b1));
+#	a3= (b3);
+#	a4 = a4 * b4;
+	x1 = (b1 + c1) * c2 + (d4 + (d2));
+	x1 = [1, 3 ,4, 5 ;1 ,3 ,4, 5];
+end
+

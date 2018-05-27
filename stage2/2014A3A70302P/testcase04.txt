@@ -1,0 +1,14 @@
+_main[]
+	string s1, s2, s3;
+	int a, b, c;
+	s1 = "Enter number";
+	s2 = "enter number";
+	print(s1);
+	read(a);
+	print(s2);
+	read(b);
+	s3  = "Sum is";
+	print(s3);
+	c =a + b;
+	print(c);
+end

@@ -1,0 +1,42 @@
+34
+
+1 PROGRAM -> 6 main sqo sqc STMT STMTS end 
+2 STMTS -> 1 null | 2 STMT STMTS 
+6 STMT -> 1 DECL_STMT | 1 COND_STMT | 1 IO_STMT | 1 FUNC_DEF | 2 FUNC_CALL semicolon | 1 ASSIGN_STMT 
+
+1 DECL_STMT -> 3 TYPE VARLIST semicolon
+4 TYPE -> 1 int | 1 real | 1 string | 1 matrix 
+1 VARLIST -> 2 id MOREVARS 
+2 MOREVARS -> 3 comma id MOREVARS | 1 null 
+
+1 COND_STMT -> 9 if op CONDITION cl STMT STMTS ELSE_STMT endif semicolon
+3 CONDITION -> 1 BOOL_EXPR | 4 not op CONDITION cl | 7 op CONDITION cl BOOL_OP op CONDITION cl
+2 BOOL_OP -> 1 and | 1 or
+1 BOOL_EXPR -> 3 BOOL_OPERAND REL_OP BOOL_OPERAND 
+3 BOOL_OPERAND -> 1 rnum | 1 num | 1 id
+6 REL_OP -> 1 lt | 1 le | 1 gt | 1 ge | 1 eq | 1 ne 
+2 ELSE_STMT -> 3 else STMT STMTS | 1 null 
+
+2 IO_STMT -> 5 read op id cl semicolon | 5 print op id cl semicolon
+
+1 FUNC_DEF -> 13 function sqo PARAMS sqc assign funid sqo PARAMS sqc STMT STMTS end semicolon 
+1 PARAMS -> 3 TYPE id MORE_PARAMS 
+2 MORE_PARAMS -> 4 comma TYPE id MORE_PARAMS | 1 null 
+
+1 FUNC_CALL -> 5 funid op ARG ARGS cl 
+2 ARGS -> 3 comma ARG ARGS | 1 null 
+5 ARG -> 1 rnum | 1 num | 1 str | 2 id MATRIX_ELEMENT | 1 MATRIX 
+2 MATRIX_ELEMENT -> 5 sqo num comma num sqc | 1 null
+1 MATRIX -> 4 sqo ROW MORE_ROWS sqc
+1 ROW -> 2 num MORE_IN_ROW
+2 MORE_IN_ROW -> 3 comma num MORE_IN_ROW | 1 null
+2 MORE_ROWS -> 3 semicolon ROW MORE_ROWS | 1 null
+
+2 ASSIGN_STMT -> 4 id assign EXPR1 semicolon | 6 sqo VARLIST sqc assign EXPR2 semicolon 
+2 EXPR2 -> 2 size id | 1 FUNC_CALL  
+3 EXPR1 -> 2 size id | 1 FUNC_CALL |  1 ARITH_EXPR 
+1 ARITH_EXPR -> 2 PROD_TERM MORE_IN_ARITH_EXPR
+3 MORE_IN_ARITH_EXPR -> 3 plus PROD_TERM MORE_IN_ARITH_EXPR | 3 minus PROD_TERM MORE_IN_ARITH_EXPR | 1 null
+1 PROD_TERM -> 2 RVALUE MORE_IN_PROD
+3 MORE_IN_PROD -> 3 mul RVALUE MORE_IN_PROD | 3 div RVALUE MORE_IN_PROD | 1 null
+6 RVALUE -> 3 op ARITH_EXPR cl | 1 rnum | 1 num | 1 str | 2 id MATRIX_ELEMENT | 1 MATRIX 

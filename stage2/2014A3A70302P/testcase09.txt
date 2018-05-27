@@ -1,0 +1,12 @@
+_main[]
+	string s;
+	s = "hello";
+	function [string s1] = _print[string s2]
+		string s3;
+		#s1 = s2;
+	end;
+	s = _print(s);
+	int x;
+	x = 9;
+
+end

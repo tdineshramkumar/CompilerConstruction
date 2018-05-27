@@ -1,0 +1,15 @@
+_main[]
+	int a;
+	matrix x;
+	x = [1,2 ;3 ,4];
+	a = 2;
+	print(a);
+	a = a + x[1,0];
+	int c ;
+	c = x[1,0];
+	print(a);
+	print(c);
+	a = x[1,2];
+	print(a);
+end
+

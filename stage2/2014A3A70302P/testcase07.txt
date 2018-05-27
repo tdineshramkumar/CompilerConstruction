@@ -1,0 +1,31 @@
+_main[] 
+	string s1, s2, s3;
+	string s;
+	s1 = "Hello ";
+	s2 = "World";
+	print(s1);
+	print(s2);
+	s3 = s1 + s2 ;
+	print(s3);
+	int x;
+	x = @s3;
+	print(x);
+	if ( x > 14  )
+		s = "long string";
+	else
+		s = "short string";
+	endif;
+	print(s);
+	s3 = s3 + s2 ;
+	s3 = s3;
+	print(s3);
+#	int x;
+	x = @s3;
+	print(x);
+	if ( x > 10  )
+		s = "long string";
+	else
+		s = "short string";
+	endif;
+	print(s);
+end
